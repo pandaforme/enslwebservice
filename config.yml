@@ -1,0 +1,46 @@
+# This is the main configuration file of your Dancer app
+# env-related settings should go to environments/$env.yml
+# all the settings in this file will be loaded at Dancer's startup.
+
+# Your application's name
+appname: "EnsemblWebService"
+
+# The default layout to use for your application (located in
+# views/layouts/main.tt)
+layout: "main"
+
+# when the charset is set to UTF-8 Dancer will handle for you
+# all the magic of encoding and decoding. You should not care
+# about unicode within your app when this setting is set (recommended).
+charset: "UTF-8"
+
+# template engine
+# simple: default and very basic template engine
+# template_toolkit: TT
+
+template: "simple"
+
+# template: "template_toolkit"
+# engines:
+#   template_toolkit:
+#     encoding:  'utf8'
+#     start_tag: '[%'
+#     end_tag:   '%]'
+
+#MySQL connection information for ensembl
+ensembl_db_host: "ensembldb.ensembl.org"
+ensembl_db_user: "anonymous"
+ensembl_db_pass: ""
+ensembl_db_port: "5306"
+
+#MySQL connection information for ap and dev
+db_host: "127.0.0.1"
+db_user: "rd"
+db_pass: ""
+db_port: "3306"
+
+#MySQL connection information for developement
+#db_host: "dev.gp.bioinfo"
+#db_user: "rd"
+#db_pass: ""
+#db_port: "3306"
